@@ -1,0 +1,12 @@
+file_format: "1"
+id: macropad4x4
+name: Macropad4x4
+type: shield
+
+requires:
+  - pro_micro
+
+features:
+  - keys
+  - encoder
+  - display
