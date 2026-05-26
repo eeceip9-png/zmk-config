@@ -5,5 +5,5 @@ include:
   - name: Read matrix
     id: matrix
     run: |
-      matrix_content=$(yq eval -o=json -I=0 '.' build.yaml)
+      matrix_content=$(yq -oj -I0 '.' build.yaml)
       echo "matrix=$matrix_content" >> $GITHUB_OUTPUT
